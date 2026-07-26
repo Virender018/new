@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QuickPe - Fast & Secure Payments</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#050816;
+color:white;
+overflow-x:hidden;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+position:fixed;
+width:100%;
+background:rgba(0,0,0,.4);
+backdrop-filter:blur(12px);
+z-index:1000;
+}
+
+.logo{
+font-size:30px;
+font-weight:700;
+color:#00E5FF;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:30px;
+transition:.3s;
+}
+
+nav a:hover{
+color:#00E5FF;
+}
+
+.hero{
+
+height:100vh;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+text-align:center;
+
+padding:0 20px;
+
+background:linear-gradient(135deg,#020617,#0f172a,#111827);
+
+}
+
+.hero h1{
+
+font-size:58px;
+
+margin-bottom:20px;
+
+}
+
+.hero h1 span{
+
+color:#00E5FF;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+max-width:700px;
+
+margin:auto;
+
+color:#ddd;
+
+line-height:1.7;
+
+}
+
+.btn{
+
+display:inline-block;
+
+margin-top:35px;
+
+padding:15px 45px;
+
+background:#00E5FF;
+
+color:#000;
+
+border-radius:50px;
+
+font-weight:600;
+
+text-decoration:none;
+
+transition:.3s;
+
+}
+
+.btn:hover{
+
+transform:translateY(-4px);
+
+box-shadow:0 0 25px #00E5FF;
+
+}
+
+section{
+
+padding:90px 8%;
+
+}
+
+.title{
+
+text-align:center;
+
+font-size:40px;
+
+margin-bottom:60px;
+
+}
+
+.cards{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:30px;
+
+}
+
+.card{
+
+background:#111827;
+
+padding:30px;
+
+border-radius:20px;
+
+transition:.4s;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 0 30px rgba(0,229,255,.3);
+
+}
+
+.card h3{
+
+margin-bottom:15px;
+
+color:#00E5FF;
+
+}
+
+.steps{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+
+}
+
+.step{
+
+background:#0f172a;
+
+padding:30px;
+
+border-radius:20px;
+
+text-align:center;
+
+}
+
+.step span{
+
+width:70px;
+
+height:70px;
+
+display:inline-flex;
+
+justify-content:center;
+
+align-items:center;
+
+background:#00E5FF;
+
+color:#000;
+
+font-size:28px;
+
+font-weight:bold;
+
+border-radius:50%;
+
+margin-bottom:20px;
+
+}
+
+.faq{
+
+max-width:900px;
+
+margin:auto;
+
+}
+
+details{
+
+background:#111827;
+
+margin-bottom:20px;
+
+padding:20px;
+
+border-radius:10px;
+
+}
+
+summary{
+
+cursor:pointer;
+
+font-weight:600;
+
+}
+
+footer{
+
+padding:40px;
+
+text-align:center;
+
+background:#020617;
+
+color:#aaa;
+
+}
+
+.float{
+
+position:fixed;
+
+right:20px;
+
+bottom:20px;
+
+display:flex;
+
+flex-direction:column;
+
+gap:15px;
+
+}
+
+.float a{
+
+width:60px;
+
+height:60px;
+
+border-radius:50%;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:28px;
+
+color:white;
+
+text-decoration:none;
+
+}
+
+.telegram{
+
+background:#229ED9;
+
+}
+
+.whatsapp{
+
+background:#25D366;
+
+}
+
+@media(max-width:768px){
+
+.hero h1{
+
+font-size:40px;
+
+}
+
+nav{
+
+display:none;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">QuickPe</div>
+
+<nav>
+
+<a href="#">Home</a>
+
+<a href="#features">Features</a>
+
+<a href="#steps">How It Works</a>
+
+<a href="#faq">FAQ</a>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div>
+
+<h1>Fast & Secure <span>QuickPe</span></h1>
+
+<p>
+
+Experience a smart payment solution with high speed, advanced security and smooth transactions.
+
+</p>
+
+<a href="#" class="btn">Get Started</a>
+
+</div>
+
+</section>
+
+<section id="features">
+
+<h2 class="title">Why Choose QuickPe?</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>⚡ Instant Transactions</h3>
+
+<p>Fast payment processing with smooth user experience.</p>
+
+</div>
+
+<div class="card">
+
+<h3>🔒 Secure Platform</h3>
+
+<p>Advanced security to keep every transaction protected.</p>
+
+</div>
+
+<div class="card">
+
+<h3>📈 Real Time Tracking</h3>
+
+<p>Track all activities instantly from your dashboard.</p>
+
+</div>
+
+<div class="card">
+
+<h3>💬 24×7 Support</h3>
+
+<p>Dedicated customer support whenever you need help.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="steps">
+
+<h2 class="title">How It Works</h2>
+
+<div class="steps">
+
+<div class="step">
+
+<span>1</span>
+
+<h3>Create Account</h3>
+
+</div>
+
+<div class="step">
+
+<span>2</span>
+
+<h3>Complete Verification</h3>
+
+</div>
+
+<div class="step">
+
+<span>3</span>
+
+<h3>Start Using QuickPe</h3>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="faq">
+
+<h2 class="title">Frequently Asked Questions</h2>
+
+<div class="faq">
+
+<details>
+
+<summary>Is QuickPe Secure?</summary>
+
+<p>Yes, security is our highest priority.</p>
+
+</details>
+
+<details>
+
+<summary>Is it Mobile Friendly?</summary>
+
+<p>Yes, it works perfectly on every device.</p>
+
+</details>
+
+<details>
+
+<summary>Support Available?</summary>
+
+<p>Our support team is available to help you.</p>
+
+</details>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 QuickPe. All Rights Reserved.
+
+</footer>
+
+<div class="float">
+
+<a href="#" class="telegram">✈</a>
+
+<a href="#" class="whatsapp">☎</a>
+
+</div>
+
+</body>
+
+</html>
